@@ -19,12 +19,10 @@ class ImageGetById extends JsonResource
             'category'=>$this->category,
             'title'=>$this->title,
             'description'=>$this->description,
-            'image'=>[
-                'image_file_name'=>$this->image,
-                'image_url'=>asset('api/image/'.$this->image),
-                'image_download'=>asset('api/image/'.$this->image.'/download'),
-                'total_download'=>$this->downloads,
-            ],
+            'image_file_name'=>$this->image,
+            'image_url'=>asset('api/image/'.$this->image),
+            'image_download'=>asset('api/image/'.$this->image.'/download'),
+            'total_download'=>$this->downloads,
             'created_at'=>$this->created_at->format('d-m-Y H:i:s'),
             'updated_at'=>$this->updated_at->format('d-m-Y H:i:s'),
         ];

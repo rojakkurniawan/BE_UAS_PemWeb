@@ -56,28 +56,17 @@ class ImageCrudController extends Controller
 
     public function get(Request $request)
     {
-        $validParameters = ['category', 'search', 'per_page'];
+        
+        $query = ImageCrud::orderBy('created_at', 'DESC');
 
-        $requestedParameters = array_keys($request->all());
-        $invalidParameters = array_diff($requestedParameters, $validParameters);
-
-        if (!empty($invalidParameters)) {
-            return response()->json([
-                'message' => 'Invalid parameters: ',
-            ], 400);
-        }
-        // $query = ImageCrud::orderBy('id', 'DESC');
-        $query = ImageCrud::inRandomOrder();
-
+        
 
         if ($request->has('category')) {
-            $query = ImageCrud::orderBy('created_at', 'asc');
             $category = $request->input('category');
             $query->where('category', $category);
         }
 
         if ($request->has('search')) {
-            $query = ImageCrud::orderBy('created_at', 'DESC');
             $searchTerm = $request->input('search');
             $query->where(function ($q) use ($searchTerm) {
                 $q->where('title', 'LIKE', '%' . $searchTerm . '%')
@@ -85,9 +74,15 @@ class ImageCrudController extends Controller
                     ->orWhere('category', 'LIKE', '%' . $searchTerm . '%');
             });
         }
-
+        
         $perPage = $request->has('per_page') ? (int) $request->input('per_page') : 9;
+
+        if ($request->has('recommended') && $request->input('recommended') === 'random') {
+            $images = $query->inRandomOrder()->paginate($perPage);
+        } 
+        
         $images = $query->paginate($perPage);
+
 
         // $images = $query->get();
 
