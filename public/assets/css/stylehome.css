@@ -81,7 +81,7 @@ section.home-card .text-bottom {
 
 /* Testimoni */
 section.testimoni {
-    min-height: 70vh;
+    min-height: 60vh;
     background-color: #ececec;
     margin-top: 40px;
 }
@@ -191,8 +191,9 @@ section.footer {
         position: relative;
         margin-top: 50px;
     }
+
     .category {
-        margin-top: -55%;
+        margin-top: -65%;
     }
     .footer {
         text-align: center;
