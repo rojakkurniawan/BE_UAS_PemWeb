@@ -15,8 +15,8 @@ Project Pemrograman Website dan Mobile dengan tema "Wallpaper App".
 
 ### Contributor
 
-- Abdul Aziz
 - Rojak Kurniawan
+- Abdul Aziz
 - Ahmad Rafi Kannajmi
 - Muhammad Rizqi Fadhillah
 - Dicky Saputra
