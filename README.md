@@ -34,6 +34,7 @@ Project Pemrograman Website dan Mobile dengan tema "Wallpaper App".
 #### POST /create
 
 Paramater | Type
+
 images[] file can upload with multiple image
 title string provide a title for the image
 category string identify category
@@ -43,6 +44,7 @@ description string explains about the uploaded image
 #### GET /get
 
 Paramater | Type
+
 category string category to display
 search string keyword to search into database
 
@@ -50,6 +52,7 @@ search string keyword to search into database
 #### POST /update/{id}
 
 Paramater | Type
+
 new_image file insert new image to update
 title string new value
 category string new value
