@@ -57,7 +57,7 @@ class ImageCrudController extends Controller
     public function get(Request $request)
     {
         
-        $query = ImageCrud::orderBy('created_at', 'DESC');
+        $query = ImageCrud::query();
 
         
 
@@ -77,14 +77,7 @@ class ImageCrudController extends Controller
         
         $perPage = $request->has('per_page') ? (int) $request->input('per_page') : 9;
 
-        if ($request->has('recommended') && $request->input('recommended') === 'random') {
-            $images = $query->inRandomOrder()->paginate($perPage);
-        } 
-        
-        $images = $query->paginate($perPage);
-
-
-        // $images = $query->get();
+        $images = $query->inRandomOrder()->paginate($perPage);
 
         if ($images->isEmpty()) {
             return response()->json([
