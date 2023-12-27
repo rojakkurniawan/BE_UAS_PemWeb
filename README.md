@@ -28,7 +28,7 @@ Project Pemrograman Website dan Mobile dengan tema "Wallpaper App".
 - Daffa Dzaky Syahbani
 - Muhammad Alviansyah
 
-# API Reference
+## API Reference
 
 ### Input Image Request
 #### POST /create
