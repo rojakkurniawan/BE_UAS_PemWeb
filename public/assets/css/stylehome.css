@@ -3,19 +3,36 @@
 body {
     font-family: "Maven Pro", sans-serif;
     font-weight: 600;
-    background-color: #8c86aa;
+    background-color: #1e1e1e;
 }
 /* Nav */
 .navbar {
     height: 70px;
+    background: #1e1e1e;
 }
 
 .navbar-brand {
     font-size: 1.5rem;
+    color: #ececec;
+    transition: all 0.2s ease-in-out;
+}
+
+.navbar-brand:hover {
+    color: #ececec;
+    transform: scale(1.1);
 }
 
 .navbar-nav {
     font-size: 1.1rem;
+}
+
+.button {
+    margin-left: -20px;
+    transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+    transform: scale(1.05);
 }
 
 /* Home */
@@ -32,6 +49,11 @@ body {
 
 .p-home {
     font-size: 20px;
+}
+
+section.home-card {
+    background-color: #1e1e1e;
+    color: #ececec;
 }
 
 section.home-card .home-text {
@@ -60,7 +82,7 @@ section.home-card .text-bottom {
 /* Testimoni */
 section.testimoni {
     min-height: 70vh;
-    background-color: #f0f4ef;
+    background-color: #ececec;
     margin-top: 40px;
 }
 
@@ -90,6 +112,7 @@ section.testimoni {
 .testimoni-text-h {
     font-weight: 600;
     font-size: 35px;
+    margin-top: -6%;
     margin-bottom: 25px;
     text-align: center;
 }
@@ -106,6 +129,7 @@ section.category .home-text {
     font-weight: 800;
     font-size: 35px;
     margin-top: 300px;
+    color: #ececec;
 }
 
 .img-ctgr {
@@ -116,7 +140,7 @@ section.category .home-text {
 section.footer {
     margin-top: 30px;
     min-height: 30vh;
-    background-color: black;
+    background-color: #111111;
 }
 
 .title {
@@ -142,4 +166,51 @@ section.footer {
 
 .footer hr {
     border-top: 1px solid #dee2e6;
+}
+
+.title {
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+    .navbar {
+        padding-left: 22%;
+    }
+    .landing-mobile {
+        margin-top: -45%;
+    }
+    .landing-mobile .button {
+        padding-left: 10px;
+    }
+    .landing-phone {
+        margin-left: -5%;
+    }
+    .landing-carousel {
+        position: relative;
+        margin-top: 50px;
+    }
+    .category {
+        margin-top: -55%;
+    }
+    .footer {
+        text-align: center;
+    }
+
+    .footer .title,
+    .footer .link {
+        margin: auto;
+    }
+
+    .footer .text-team {
+        text-align: center;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .footer-trademark {
+        margin: auto;
+        margin-bottom: 20px;
+    }
 }

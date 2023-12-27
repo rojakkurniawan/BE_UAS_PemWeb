@@ -6,30 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Wallpaper App | UAS Project | FE</title>
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
     </script>
-
     <link rel="stylesheet" href="{{ asset('assets/css/stylehome.css') }}" />
-
 </head>
-
 <body>
     {{-- Navbar --}}
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="#home">Wallpaper APP</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="ms-auto navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                </div>
+            <a class="navbar-brand " href="#home">Wallpaper APP</a>          
             </div>
         </div>
     </nav>
@@ -37,12 +25,12 @@
     {{-- Home --}}
     <section class="home-card" id="home">
         <div class="container">
-            <div class="row">
+            <div class="row landing-mobile">
                 <div class="col-md-6">
                     <div class="home-text slideright">WallApp,<div>Everything you'll need.</div>
                     </div>
-                    <p class="text-p1">We provide a variety of wallpapers that you can choose from.</p>
-                    <div class="ms-3">Download Now:</div>
+                    <p class="text">We provide a variety of wallpapers that you can choose from.</p>
+                    <div class="ms">Download Now:</div>
                     <div class="button">
                         <a href="https://github.com/kilyfa/FE_WallpaperApp_UAS" class="btn-outline-secondary mt-2"><img
                                 class=" download-img" src="{{ asset('assets/image/get-it-on-github.png') }}"
@@ -50,7 +38,7 @@
                     </div>
 
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 landing-phone">
                     <div>
                         <img src="assets/image/home-phone.png" alt="home" class="img-card mt-5">
                     </div>
@@ -64,45 +52,40 @@
         <div class="container">
             <div class="row">
                 <div class="testimoni-card">
-                    <div class="testimoni-text-h">Testimoni</div>
+                    <div class="testimoni-text-h">Features</div>
                     <div class="carousel-container">
                         <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active" data-bs-interval="10000">
-                                    <div>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut sapiente,
-                                        molestias natus repellendus laudantium provident dignissimos quibusdam soluta.
-                                        Soluta eos obcaecati dolor, praesentium facilis necessitatibus laboriosam
-                                        placeat. Ad, eaque nihil!</div>
+                                    <div>Kami berusaha menyediakan Wallpapers dengan resolusi full HD yang dapat memukau mata.</div>
                                     <div class="carousel-user-testi">
-                                        Alex
+                                        High Resolution
                                     </div>
                                 </div>
                                 <div class="carousel-item" data-bs-interval="2000">
-                                    <div>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda suscipit
-                                        natus excepturi nesciunt nemo. Ut quibusdam, eveniet magni deserunt molestias
-                                        alias perferendis aliquam inventore repudiandae ipsa quia ratione facere
-                                        voluptate.</div>
+                                    <div>Dapatkan pengalaman mengunduh yang mudah dan cepat dengan aplikasi kami.</div>
                                     <div class="carousel-user-testi">
-                                        Chris
+                                        Mudah diunduh
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <div>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus asperiores vel
-                                        nihil earum iusto labore veniam ipsa quisquam odit, corrupti eligendi quod
-                                        similique voluptas! Harum magnam voluptates veritatis earum velit?</div>
+                                    <div>Aplikasi kami memberikan pengalaman tanpa gangguan, bebas iklan.</div>
                                     <div class="carousel-user-testi">
-                                        Jessica
+                                        Tanpa iklan
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
-                                    class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-                                    aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-                                    aria-label="Slide 3"></button>
+                            <div class="landing-carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
+                                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                                        aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                                        aria-label="Slide 3"></button>
+                                </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -130,13 +113,13 @@
             <div class="col-md-3"></div>
             <div class="col-md-2 mt-5">
                 <div class="title">Get our app</div>
-                <div class=""> <a class="link" href="https://github.com/kilyfa/FE_WallpaperApp_UAS">Github</a></div>
+                <div class=""> <a class="link" href="https://github.com/kilyfa/FE_WallpaperApp_UAS" style="text-decoration: underline;">Github</a></div>
             </div>
             <div class="col-md-2 mt-5">
                 <div class="title">Our Github</div>
                 <div class="">
-                    <div><a class="link" href="https://github.com/kilyfa/FE_WallpaperApp_UAS">Front End Github</a></div>
-                    <div><a class="link" href="https://github.com/rojakkurniawan/BE_WallpaperApp_UAS">Back End Github</a></div>
+                    <div><a class="link" href="https://github.com/kilyfa/FE_WallpaperApp_UAS" style="text-decoration: underline;">Front End Github</a></div>
+                    <div><a class="link" href="https://github.com/rojakkurniawan/BE_WallpaperApp_UAS" style="text-decoration: underline;">Back End Github</a></div>
                 </div>
             </div>
             <div class="col-md-2 mt-5">
