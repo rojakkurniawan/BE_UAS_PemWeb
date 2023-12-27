@@ -57,21 +57,21 @@
                         <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active" data-bs-interval="10000">
-                                    <div>Kami berusaha menyediakan Wallpapers dengan resolusi full HD yang dapat memukau mata.</div>
+                                    <div>We try to provide Wallpapers with full HD resolution that can amaze the eyes.</div>
                                     <div class="carousel-user-testi">
                                         High Resolution
                                     </div>
                                 </div>
                                 <div class="carousel-item" data-bs-interval="2000">
-                                    <div>Dapatkan pengalaman mengunduh yang mudah dan cepat dengan aplikasi kami.</div>
+                                    <div>Get an easy and fast downloading experience with our app.</div>
                                     <div class="carousel-user-testi">
-                                        Mudah diunduh
+                                        Easy to download
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <div>Aplikasi kami memberikan pengalaman tanpa gangguan, bebas iklan.</div>
+                                    <div>Our app provides an uninterrupted, ad-free experience.</div>
                                     <div class="carousel-user-testi">
-                                        Tanpa iklan
+                                        No ads
                                     </div>
                                 </div>
                             </div>
