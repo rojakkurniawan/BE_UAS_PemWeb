@@ -27,3 +27,35 @@ Project Pemrograman Website dan Mobile dengan tema "Wallpaper App".
 - Muhammad Rifqi Arrasyid
 - Daffa Dzaky Syahbani
 - Muhammad Alviansyah
+
+  ### API Reference
+
+Input Image Request
+POST /create
+
+Paramater | Type
+images[] file can upload with multiple image
+title string provide a title for the image
+category string identify category
+description string explains about the uploaded image
+
+Get Information Image Request
+GET /get
+
+Paramater | Type
+category string category to display
+search string keyword to search into database
+
+
+Update Image Request
+POST /update/{id}
+
+Paramater | Type
+new_image file insert new image to update
+title string new value
+category string new value
+description string new value
+
+Delete Image Request
+DELETE /delete/{id}
+
