@@ -31,7 +31,7 @@ Project Pemrograman Website dan Mobile dengan tema "Wallpaper App".
 ## API Reference
 
 ### Input Image Request
-#### POST /create
+#### POST /api/create
 
 Paramater | Type
 
@@ -44,7 +44,7 @@ category string identify category
 description string explains about the uploaded image
 
 ### Get Information Image Request
-#### GET /get
+#### GET /api/get
 
 Paramater | Type
 
@@ -53,7 +53,7 @@ category string category to display
 search string keyword to search into database
 
 ### Update Image Request
-#### POST /update/{id}
+#### POST /api/update/{id}
 
 Paramater | Type
 
@@ -67,5 +67,5 @@ description string new value
 
 
 ### Delete Image Request
-#### DELETE /delete/{id}
+#### DELETE /api/delete/{id}
 
